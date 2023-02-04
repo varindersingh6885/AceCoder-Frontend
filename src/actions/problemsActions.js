@@ -31,7 +31,8 @@ export const getProblems = () => async dispatch => {
         type : PROBLEM_GET_ALL_REQUEST
     })
     try {
-        const {data} = await axios.get('/problems/get/all')
+        // const {data} = await axios.get('/problems/get/all')
+        const {data} = await axios.get('https://acecoder-backend.onrender.com/problems/get/all')
         dispatch({
             type : PROBLEM_GET_ALL_SUCCESS,
             payload : data
