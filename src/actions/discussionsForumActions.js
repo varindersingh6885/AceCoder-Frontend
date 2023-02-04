@@ -30,7 +30,7 @@ export const submit = (user,title,text,problemId) => async dispatch => {
     }
 
     try {
-        const {data} = await axios.post(`/discussions/submit/${problemId}`,JSON.stringify(discussion),config)
+        const {data} = await axios.post(`https://acecoder-backend.onrender.com/discussions/submit/${problemId}`,JSON.stringify(discussion),config)
         dispatch({
             type : PROBLEM_DISCUSSION_SUBMIT_SUCCESS,
             payload : data
@@ -58,7 +58,7 @@ export const getAllDiscussions = (problemId) => async dispatch => {
     }
 
     try {
-        const {data} = await axios.get(`/discussions/getAll/${problemId}`,config)
+        const {data} = await axios.get(`https://acecoder-backend.onrender.com/discussions/getAll/${problemId}`,config)
         dispatch({
             type : PROBLEM_DISCUSSIONS_GET_ALL_SUCCESS,
             payload : data
@@ -86,7 +86,7 @@ export const getDiscussion = (discussionId) => async dispatch => {
     }
 
     try {
-        const {data} = await axios.get(`/discussions/get/${discussionId}`,config)
+        const {data} = await axios.get(`https://acecoder-backend.onrender.com/discussions/get/${discussionId}`,config)
         dispatch({
             type : PROBLEM_DISCUSSION_GET_SUCCESS,
             payload : data

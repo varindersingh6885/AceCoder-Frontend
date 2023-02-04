@@ -27,7 +27,7 @@ export const customInputOutput = (source, lang='java',input,problem,isCreatingPr
             type : PROBLEM_CUSTOM_INPUT_EVALUATE_REQUEST
         })
         if(isCreatingProblem){
-            const {data} = await axios.post(`/code/execute`,program,config);
+            const {data} = await axios.post(`https://acecoder-backend.onrender.com/code/execute`,program,config);
             dispatch({
                 type : PROBLEM_CUSTOM_INPUT_EVALUATE_SUCCESS,
                 payload : data
@@ -35,7 +35,7 @@ export const customInputOutput = (source, lang='java',input,problem,isCreatingPr
             return
         }
 
-        const {data} = await axios.post(`/code/execute/${problem._id}`, program, config);
+        const {data} = await axios.post(`https://acecoder-backend.onrender.com/code/execute/${problem._id}`, program, config);
         // console.log(data);
         dispatch({
             type : PROBLEM_CUSTOM_INPUT_EVALUATE_SUCCESS,
@@ -68,11 +68,11 @@ export const submissionOutput = (source, lang='java',input,problem,isCreatingPro
             type : PROBLEM_SUBMISSION_EVALUATE_REQUEST
         })
         if(isCreatingProblem){
-            const {data} = await axios.post(`/code/submission`,program,config);
+            const {data} = await axios.post(`https://acecoder-backend.onrender.com/code/submission`,program,config);
             return data;
         }
 
-        const {data} = await axios.post(`/code/submission/${problem._id}`, program, config);
+        const {data} = await axios.post(`https://acecoder-backend.onrender.com/code/submission/${problem._id}`, program, config);
         
         dispatch({
             type : PROBLEM_SUBMISSION_EVALUATE_SUCCESS,

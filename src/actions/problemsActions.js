@@ -13,7 +13,7 @@ export const getProblemBySearchTitle = (searchTitle) => async dispatch => {
         type : PROBLEM_GET_REQUEST
     })
     try {
-        const {data} = await axios.get(`/problems/get/${searchTitle}`)
+        const {data} = await axios.get(`https://acecoder-backend.onrender.com/problems/get/${searchTitle}`)
         dispatch({
             type : PROBLEM_GET_SUCCESS,
             payload : data

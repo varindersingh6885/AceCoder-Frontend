@@ -14,7 +14,7 @@ const register = (user) => async (dispatch) => {
     type: USER_REGISTER_REQUEST,
   });
   try {
-    const { data } = await axios.post("/user/register", user);
+    const { data } = await axios.post("https://acecoder-backend.onrender.com/user/register", user);
 
     dispatch({
       type: USER_REGISTER_SUCCESS,
@@ -38,7 +38,7 @@ const login = (user) => async (dispatch) => {
     dispatch({
       type: USER_LOGIN_REQUEST,
     });
-    const { data } = await axios.post("/user/login", user);
+    const { data } = await axios.post("https://acecoder-backend.onrender.com/user/login", user);
     dispatch({
       type: USER_LOGIN_SUCCESS,
       payload: data,

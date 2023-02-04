@@ -68,7 +68,7 @@ export const submitProblem = (problem) => async dispatch => {
     try {
         // const data = JSON.stringify(problem)
         if(problem.testcases.length > 0) {
-            const {data} = await axios.post('/create-problem/submit',{problem : JSON.stringify(problem)})
+            const {data} = await axios.post('https://acecoder-backend.onrender.com/create-problem/submit',{problem : JSON.stringify(problem)})
             dispatch({
                 type : PROBLEM_SUBMIT_SUCCESS,
                 payload : data
