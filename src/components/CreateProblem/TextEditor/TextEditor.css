@@ -1,0 +1,82 @@
+#problem-description,
+#problem-editorial {
+    position: relative;
+    height: 90vh;
+}
+
+#problem-description .ql-toolbar.ql-snow,
+#problem-editorial .ql-toolbar.ql-snow {
+    position : absolute;
+    top : 0;
+    background-color: #f3f3f3;
+    width : 100%;
+    z-index: 1;
+}
+#problem-description,
+#problem-editorial {
+    position: relative;
+}
+
+#problem-description .ql-toolbar.ql-snow,
+#problem-editorial .ql-tooblar.ql-snow {
+    position : absolute;
+    top : 0;
+    background-color: #f3f3f3;
+    width : 100%;
+    z-index: 1;
+}
+
+#problem-description .ql-container,
+#problem-editorial .ql-container {
+    height : 90vh;
+    padding-top: 0.1rem;
+}
+
+#problem-description .ql-editor,
+#problem-editorial .ql-editor {
+    overflow-y: scroll;
+    padding-top: 3.1rem;
+    height : 100%;
+}
+
+#problem-description .ql-syntax,
+#problem-editorial .ql-syntax {
+    color : black;
+    background-color: #f3f3f3;
+}
+
+@media (max-width : 1258px) {
+    #problem-description .ql-editor,
+#problem-editorial .ql-editor {
+        padding-top : 4.6rem;
+    }
+}
+
+@media (max-width : 715px) {
+    #problem-description .ql-editor,
+#problem-editorial .ql-editor {
+        padding-top : 6.1rem;
+    }
+}
+
+@media (max-width : 600px) {
+    
+    #problem-description .ql-editor,
+#problem-editorial .ql-editor {
+        padding-top : 4.6rem;
+    }
+}
+
+@media (max-width : 548px) {
+    #problem-description .ql-editor,
+#problem-editorial .ql-editor  {
+        padding-top : 6.1rem;
+    }
+}
+
+@media (max-width : 415px) {
+    #problem-description .ql-editor,
+#problem-editorial .ql-editor {
+        padding-top : 7.4rem;
+    }
+}

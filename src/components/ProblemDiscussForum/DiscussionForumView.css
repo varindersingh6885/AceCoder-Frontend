@@ -1,0 +1,12 @@
+#discussion-forum-view .ql-container {
+    /* border: none; */
+}
+
+#discussion-forum-view .ql-container {
+    height :auto;
+}
+
+#discussion-forum-view .ql-syntax {
+    background-color: #f7f9fa;
+    color : black;
+}

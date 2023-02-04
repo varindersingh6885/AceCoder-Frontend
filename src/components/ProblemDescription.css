@@ -1,0 +1,18 @@
+#problem-description-view .ql-container {
+    border: none;
+}
+
+#problem-description-view .ql-syntax {
+    background-color: #f7f9fa;
+    color : black;
+}
+
+#problem-editorial-view .ql-container {
+    border: none;
+}
+
+#problem-editorial-view .ql-syntax {
+    background-color: #f7f9fa;
+    color : black;
+}
+
